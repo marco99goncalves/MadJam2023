@@ -37,6 +37,7 @@ public class Walker : MonoBehaviour
             }
         }else
         {
+            transform.up = -(targets[cur_target].position - transform.position);
             transform.position = Vector3.MoveTowards(transform.position, targets[cur_target].position, speed * Time.deltaTime);
 
             Vector3 diff_pos = transform.position - targets[cur_target].transform.position;
