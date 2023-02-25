@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Car : MonoBehaviour
 {
@@ -119,5 +120,33 @@ public class Car : MonoBehaviour
     {
         // Cenas para a leticia fazer 
         dead = true;
+        switch (reason)
+        {
+            case 0:
+            {
+                SceneManager.LoadScene("deathbuildings");
+                break;
+            }
+            case 1:
+            {
+                SceneManager.LoadScene("deathbytime");
+                break;
+            }
+            case 2:
+            {
+                SceneManager.LoadScene("deathpolice");
+                break;
+            }
+            case 3:
+            {
+                SceneManager.LoadScene("deathbywater");
+                break;
+            }
+            case 4:
+            {
+                SceneManager.SetActiveScene(SceneManager.GetSceneByName("deathbyanimals"));
+                break;
+            }
+        }
     }
 }
