@@ -297,8 +297,8 @@ MonoBehaviour:
   - {fileID: 9141167812407994235}
   - {fileID: 9141167813767443048}
   - {fileID: 9141167813839997288}
-  speed: 10
-  detection_radius: 30
+  speed: 20
+  detection_radius: 60
   player: {fileID: 0}
 --- !u!1 &9141167814252942294
 GameObject:
