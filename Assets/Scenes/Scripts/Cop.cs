@@ -9,11 +9,13 @@ public class Cop : MonoBehaviour
     public List<Transform> targets;
     public float speed;
     public double detection_radius;
+    public Car player;
 
     int cur_target;
     // Start is called before the first frame update
     void Start()
     {
+        player = FindFirstObjectByType<Car>();
         transform.position = targets[0].position; // Set the starting position to be the same as the first target
         cur_target = 0;
     }
@@ -39,5 +41,15 @@ public class Cop : MonoBehaviour
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(this.transform.position, (float)detection_radius);
+    }
+
+    public void OnPlayerKill()
+    {
+        double dist = Vector2.Distance(transform.position, player.transform.position);
+        if(dist <= detection_radius)
+        {
+            // Player got caught
+            player.LoseGame();
+        }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Car : MonoBehaviour
@@ -8,6 +9,7 @@ public class Car : MonoBehaviour
     public float acceleration;
     public float steering;
     public float drag;
+    public List<Cop> cops;
 
     public bool dead = false;
 
@@ -20,6 +22,7 @@ public class Car : MonoBehaviour
     private void Start()
     {
         this.rb = GetComponent<Rigidbody2D>();
+        cops = FindObjectsOfType<Cop>().ToList<Cop>();
     }
 
     private void FixedUpdate()
@@ -78,6 +81,10 @@ public class Car : MonoBehaviour
             cur_points += w.GetPoints();
             cur_time += w.GetTime();
             w.Kill();
+            foreach(Cop cop in cops)
+            {
+                cop.OnPlayerKill();
+            }
         }
     }
 
@@ -89,7 +96,7 @@ public class Car : MonoBehaviour
         }
     }
 
-    private void LoseGame()
+    public void LoseGame()
     {
         // Cenas para a leticia fazer 
         dead = true;
