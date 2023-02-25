@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Car : MonoBehaviour
@@ -67,7 +68,14 @@ public class Car : MonoBehaviour
             // cur_time -= Time.deltaTime;
             if (cur_time <= 0)
             {
-                LoseGame();
+                LoseGame(1);
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                dead = false;
             }
         }
         
@@ -92,11 +100,22 @@ public class Car : MonoBehaviour
     {
         if(collision.gameObject.tag == "Loser")
         {
-            LoseGame();
+            LoseGame(0);
         }
+
+        if (collision.gameObject.tag == "Water")
+            LoseGame(3);
     }
 
-    public void LoseGame()
+
+    /*
+     * 0 - Crashed into building
+     * 1 - Ran out of time
+     * 2 - Cops
+     * 3 - Water
+     * 4 - Animals (Not implemented)
+     * */
+    public void LoseGame(int reason)
     {
         // Cenas para a leticia fazer 
         dead = true;

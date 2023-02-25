@@ -49,7 +49,7 @@ public class Cop : MonoBehaviour
         if(dist <= detection_radius)
         {
             // Player got caught
-            player.LoseGame();
+            player.LoseGame(2);
         }
     }
 }
