@@ -6,6 +6,7 @@ public class Music : MonoBehaviour
 {
     private void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        if(GameObject.FindGameObjectsWithTag("Music Player").Length <= 0)
+            DontDestroyOnLoad(transform.gameObject);
     }
 }
