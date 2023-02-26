@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Car : MonoBehaviour
 {
@@ -23,10 +25,16 @@ public class Car : MonoBehaviour
     private Rigidbody2D rb;
     private float currentSpeed;
 
+    public TextMeshProUGUI score;
+    public TextMeshProUGUI time;
+
     private void Start()
     {
         this.rb = GetComponent<Rigidbody2D>();
         cops = FindObjectsOfType<Cop>().ToList<Cop>();
+
+        score = GameObject.FindGameObjectsWithTag("Score_Score")[0].GetComponent<TextMeshProUGUI>();
+        time = GameObject.FindGameObjectsWithTag("Time_Score")[0].GetComponent<TextMeshProUGUI>();
     }
 
     private void FixedUpdate()
@@ -68,7 +76,10 @@ public class Car : MonoBehaviour
     {
         if (!dead)
         {
-            // cur_time -= Time.deltaTime;
+            cur_time -= Time.deltaTime;
+            time.text = ((int)cur_time).ToString();
+            score.text = ((int)cur_points).ToString();
+
             if (cur_time <= 0)
             {
                 LoseGame(1);
@@ -107,7 +118,9 @@ public class Car : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "Water")
+        { 
             LoseGame(3);
+        }
     }
 
 
