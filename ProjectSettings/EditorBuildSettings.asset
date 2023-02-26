@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SingletonScene.unity
+    guid: d4cc2ab781144c54fadd2b56163e719b
+  - enabled: 1
     path: Assets/Scenes/startmenu.unity
     guid: f4ef8d77ed9411445b71412037dba6c0
   - enabled: 1
@@ -23,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/deathbytime.unity
     guid: b1b21be737085964e9ad0bf49c4dba8c
+  - enabled: 1
+    path: Assets/Scenes/balloons.unity
+    guid: 69500d9ad674b0546ae9ea508cd58de1
+  - enabled: 1
+    path: Assets/Scenes/mainsceneui.unity
+    guid: f67bd287e791e8a43a9b20389b461a83
   - enabled: 1
     path: Assets/Scenes/deathbuildings.unity
     guid: ddb15a847ccf2f94cb292b487e8180a8

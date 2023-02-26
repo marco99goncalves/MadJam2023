@@ -10,6 +10,7 @@ TagManager:
   - Time_Score
   - Score_Score
   - Music Player
+  - Animal
   layers:
   - Default
   - TransparentFX

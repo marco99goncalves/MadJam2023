@@ -20,7 +20,7 @@ public class Car : MonoBehaviour
     public bool dead = false;
 
     public int cur_points = 0;
-    public double cur_time = 10;
+    public double cur_time = 20;
 
     private Rigidbody2D rb;
     private float currentSpeed;
@@ -108,6 +108,11 @@ public class Car : MonoBehaviour
                 cop.OnPlayerKill();
             }
         }
+
+        if(collision.gameObject.tag == "Animal")
+        {
+            LoseGame(4);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -159,7 +164,7 @@ public class Car : MonoBehaviour
             }
             case 4:
             {
-                SceneManager.SetActiveScene(SceneManager.GetSceneByName("deathbyanimals"));
+                SceneManager.LoadScene("deathbyanimals");
                 break;
             }
         }
