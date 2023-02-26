@@ -15,7 +15,9 @@ public class Walker : MonoBehaviour
     public int points_bonus;
     public double time_bonus;
 
-    public double respawn_timer;
+    public AudioSource death_sound;
+
+    double respawn_timer;
     int cur_target;
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,7 @@ public class Walker : MonoBehaviour
         respawn_timer = respawn_timeout;
         transform.position = targets[0].position; // Set the starting position to be the same as the first target
         cur_target = 0;
+        death_sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -67,6 +70,7 @@ public class Walker : MonoBehaviour
     {
         dead = true;
         GetComponent<SpriteRenderer>().enabled = false;
+        PlayDeathSound();
     }
     
     public int GetPoints()
@@ -77,5 +81,10 @@ public class Walker : MonoBehaviour
     public double GetTime()
     {
         return time_bonus;
+    }
+
+    public void PlayDeathSound()
+    {
+        death_sound.Play();
     }
 }
