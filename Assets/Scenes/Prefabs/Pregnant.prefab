@@ -227,7 +227,7 @@ MonoBehaviour:
   respawn_timeout: 60
   dead: 0
   points_bonus: 15
-  time_bonus: 15
+  time_bonus: 10
   death_sound: {fileID: 0}
 --- !u!61 &5645710232156856794
 BoxCollider2D:

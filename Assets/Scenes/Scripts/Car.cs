@@ -28,6 +28,8 @@ public class Car : MonoBehaviour
     public TextMeshProUGUI score;
     public TextMeshProUGUI time;
 
+    public Music music_player;
+
     private void Start()
     {
         this.rb = GetComponent<Rigidbody2D>();
@@ -35,6 +37,7 @@ public class Car : MonoBehaviour
 
         score = GameObject.FindGameObjectsWithTag("Score_Score")[0].GetComponent<TextMeshProUGUI>();
         time = GameObject.FindGameObjectsWithTag("Time_Score")[0].GetComponent<TextMeshProUGUI>();
+        music_player = FindObjectOfType<Music>();
     }
 
     private void FixedUpdate()
@@ -79,6 +82,7 @@ public class Car : MonoBehaviour
             cur_time -= Time.deltaTime;
             time.text = ((int)cur_time).ToString();
             score.text = ((int)cur_points).ToString();
+            music_player.Score = cur_points;
 
             if (cur_time <= 0)
             {

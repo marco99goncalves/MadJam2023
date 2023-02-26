@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 3657004831648658635}
   m_Layer: 0
   m_Name: Cat
-  m_TagString: Walker
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,6 +222,7 @@ MonoBehaviour:
   dead: 0
   points_bonus: 15
   time_bonus: 15
+  death_sound: {fileID: 0}
 --- !u!61 &3657004831648658635
 BoxCollider2D:
   m_ObjectHideFlags: 0

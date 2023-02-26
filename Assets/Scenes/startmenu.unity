@@ -379,8 +379,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Exit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
-  m_sharedMaterial: {fileID: -2476753688667502141, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1168,8 +1168,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Everyone is dying to get in!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
-  m_sharedMaterial: {fileID: -2476753688667502141, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1804,8 +1804,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
-  m_sharedMaterial: {fileID: -2476753688667502141, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1939,8 +1939,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: About
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
-  m_sharedMaterial: {fileID: -2476753688667502141, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2114,8 +2114,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: How To
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
-  m_sharedMaterial: {fileID: -2476753688667502141, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2249,8 +2249,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Funeral Service
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
-  m_sharedMaterial: {fileID: -2476753688667502141, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2473,7 +2473,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3a53dc47e379fb948a284691c77c0c22, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2632,8 +2632,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Mortimer''s '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
-  m_sharedMaterial: {fileID: -2476753688667502141, guid: 976740b74caa06649a9847ee5e3ee4a1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

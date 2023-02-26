@@ -338,6 +338,8 @@ GameObject:
   - component: {fileID: 622828439311566764}
   - component: {fileID: 600049748814987600}
   - component: {fileID: 1188545838439052704}
+  - component: {fileID: 5249489820950069419}
+  - component: {fileID: 6692864531753111693}
   m_Layer: 5
   m_Name: tScore (1)
   m_TagString: Untagged
@@ -462,3 +464,27 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5249489820950069419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8755845962900864733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a14278b0c733b4a8073f1c50beb75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6692864531753111693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8755845962900864733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a14278b0c733b4a8073f1c50beb75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

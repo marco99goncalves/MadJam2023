@@ -10,6 +10,7 @@ public class Music : MonoBehaviour
 
     }
     private static Music instance = null;
+    public int Score = 0;
     public static Music Instance
     {
         get { return instance; }
