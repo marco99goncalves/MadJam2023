@@ -13,6 +13,8 @@ public class Car : MonoBehaviour
     public float drag;
     public List<Cop> cops;
 
+
+
     public bool dead = false;
 
     public int cur_points = 0;

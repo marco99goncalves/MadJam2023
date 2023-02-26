@@ -17,4 +17,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/about.unity
     guid: a02aee55e6485a244bb1484da4f3924d
+  - enabled: 1
+    path: Assets/Scenes/deathpolice.unity
+    guid: 04079eec0989b1347baa669ac71c980b
+  - enabled: 1
+    path: Assets/Scenes/deathbytime.unity
+    guid: b1b21be737085964e9ad0bf49c4dba8c
+  - enabled: 1
+    path: Assets/Scenes/deathbuildings.unity
+    guid: ddb15a847ccf2f94cb292b487e8180a8
+  - enabled: 1
+    path: Assets/Scenes/deathbyanimals.unity
+    guid: d587a36148cd02247a5d3fe7c2188636
+  - enabled: 1
+    path: Assets/Scenes/deathbywater.unity
+    guid: b8a6b60096f2f08429e9d8d75260bc9b
   m_configObjects: {}

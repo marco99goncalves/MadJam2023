@@ -5,9 +5,9 @@ using System.Collections;
 
 public class Quit : MonoBehaviour
 {
-     void QuitGame () {
+    public void QuitGame () {
         Application.Quit ();
         Debug.Log("Game is exiting");
         //Just to make sure its working
- }
+    }
 }
